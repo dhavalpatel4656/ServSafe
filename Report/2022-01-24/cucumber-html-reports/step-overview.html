@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Html Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Suite</td>
+                        <td>24 Jan 2022, 15:12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">AddCartDef.user_add_last_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="16265499400">16s 265ms</td>
+                <td class="duration" data-value="16265499400">16s 265ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddCartDef.user_click_on_buy_now()</td>
+                <td>1</td>
+                <td class="duration" data-value="39216634400">39s 216ms</td>
+                <td class="duration" data-value="39216634400">39s 216ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddCartDef.user_navigate_to_ServSafe_Workplace()</td>
+                <td>1</td>
+                <td class="duration" data-value="28322047500">28s 322ms</td>
+                <td class="duration" data-value="28322047500">28s 322ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddCartDef.user_navigate_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="3593830300">3s 593ms</td>
+                <td class="duration" data-value="3593830300">3s 593ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddCartDef.user_should_be_able_to_see_added_product_in_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="5044601300">5s 044ms</td>
+                <td class="duration" data-value="5044601300">5s 044ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InitializeWebDriver.after(Scenario)</td>
+                <td>4</td>
+                <td class="duration" data-value="4250620100">4s 250ms</td>
+                <td class="duration" data-value="1062655025">1s 062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InitializeWebDriver.before(Scenario)</td>
+                <td>4</td>
+                <td class="duration" data-value="10050926800">10s 050ms</td>
+                <td class="duration" data-value="2512731700">2s 512ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_click_on_login_button()</td>
+                <td>3</td>
+                <td class="duration" data-value="437547400">437ms</td>
+                <td class="duration" data-value="145849133">145ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_enter_invalid_email_and_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="22469850400">22s 469ms</td>
+                <td class="duration" data-value="22469850400">22s 469ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_enter_valid_email_and_password()</td>
+                <td>2</td>
+                <td class="duration" data-value="44791469600">44s 791ms</td>
+                <td class="duration" data-value="22395734800">22s 395ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_navigate_to_signup_page()</td>
+                <td>3</td>
+                <td class="duration" data-value="46721834700">46s 721ms</td>
+                <td class="duration" data-value="15573944900">15s 573ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_should_be_able_to_login_and_reached_to_dashboard_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="19987118300">19s 987ms</td>
+                <td class="duration" data-value="19987118300">19s 987ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_should_be_reached_on_login_page()</td>
+                <td>3</td>
+                <td class="duration" data-value="15150216300">15s 150ms</td>
+                <td class="duration" data-value="5050072100">5s 050ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginDef.user_should_not_able_to_login()</td>
+                <td>1</td>
+                <td class="duration" data-value="5051405400">5s 051ms</td>
+                <td class="duration" data-value="5051405400">5s 051ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.enter_verification_code()</td>
+                <td>1</td>
+                <td class="duration" data-value="15489135800">15s 489ms</td>
+                <td class="duration" data-value="15489135800">15s 489ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.new_account_should_be_created()</td>
+                <td>1</td>
+                <td class="duration" data-value="5057590200">5s 057ms</td>
+                <td class="duration" data-value="5057590200">5s 057ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_click_on_submit_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="119040200">119ms</td>
+                <td class="duration" data-value="119040200">119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_enter_an_email_address()</td>
+                <td>1</td>
+                <td class="duration" data-value="11628529200">11s 628ms</td>
+                <td class="duration" data-value="11628529200">11s 628ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_fetch_verification_code_from_email()</td>
+                <td>1</td>
+                <td class="duration" data-value="5685478700">5s 685ms</td>
+                <td class="duration" data-value="5685478700">5s 685ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_fill_required_data_for_create_a_new_account()</td>
+                <td>1</td>
+                <td class="duration" data-value="104430658200">1m 44s 430ms</td>
+                <td class="duration" data-value="104430658200">1m 44s 430ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_navigate_to_signup_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="19550488800">19s 550ms</td>
+                <td class="duration" data-value="19550488800">19s 550ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_open_servsafe_url_in_browser()</td>
+                <td>4</td>
+                <td class="duration" data-value="120242645100">2m 242ms</td>
+                <td class="duration" data-value="30060661275">30s 060ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.user_should_be_reached_on_signup_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="47992200">047ms</td>
+                <td class="duration" data-value="47992200">047ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SignupDef.verification_code_is_sent_to_and_email_entered()</td>
+                <td>1</td>
+                <td class="duration" data-value="15166052300">15s 166ms</td>
+                <td class="duration" data-value="15166052300">15s 166ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot>
+            <tr>
+              <td>24</td>
+              <td>40</td>
+              <td class="duration">9m 18s 771ms</td>
+              <td class="duration">13s 969ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
